@@ -10,11 +10,15 @@ public class CampaignManager {
         this.baseCampaing = baseCampaing;
     }
 
-    public void addCampaign(Campaign campaign)
-    {
+    public void addCampaign(Campaign campaign) {
         System.out.println(this.baseCampaing.newCampaing(campaign));
     }
-    public void removeCampaign(Campaign campaign){
 
+    public void removeCampaign(Campaign campaign) {
+        System.out.println("Silindi: " + this.baseCampaing.removeCampaign(campaign));
+    }
+
+    public void updateCampaign(Campaign campaign) {
+        System.out.println("Guncellendi" + this.baseCampaing.updateCampaign(campaign));
     }
 }
